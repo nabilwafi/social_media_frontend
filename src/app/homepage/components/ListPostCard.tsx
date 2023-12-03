@@ -52,7 +52,7 @@ const ListPostCard = ({ posts, user }: { posts: Post[]; user?: User }) => {
         <EditPostForm
           setIsOpenOverlay={setIsOpen}
           postID={selectedPost?.uuid!}
-          user={user!}
+          user={auth!}
         />
       </ModalOverlay>
     </>
