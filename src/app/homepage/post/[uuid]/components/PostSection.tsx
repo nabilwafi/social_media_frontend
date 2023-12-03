@@ -9,8 +9,7 @@ const PostSection = ({ post, user }: { post: Post; user: User }) => {
         <Image
           width={500}
           height={500}
-          className='w-20 h-20 rounded-full'
-          style={{ width: 'auto' }}
+          className='w-20 h-20 rounded-full object-cover'
           alt={user.username}
           src={`${process.env.NEXT_PUBLIC_API_BASE_URL}/public/uploads/${user.photo_profile}`}
         />
