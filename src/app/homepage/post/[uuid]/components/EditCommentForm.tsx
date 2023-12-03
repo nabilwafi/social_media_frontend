@@ -63,7 +63,7 @@ const EditCommentForm = (props: EditCommentFormProps) => {
 
           setIsOpenOverlay(false);
 
-          toast.success('Successfully Updated Post');
+          toast.success('Successfully Updated Comment');
           action.resetForm();
         } catch (error) {
           console.log(error);

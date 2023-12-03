@@ -32,7 +32,7 @@ const CommentForm = ({
             userId,
           });
 
-          toast.success('Successfully Created Post');
+          toast.success('Successfully Created Comment');
           action.resetForm();
         } catch (error) {
           console.log(error);

@@ -69,8 +69,8 @@ const Page = ({ params }: { params: { uuid: string } }) => {
                 <CardComment
                   key={comment.uuid}
                   comment={comment}
-                  user={post.user!}
-                  isSameUser={post.userId! === comment.userId}
+                  user={comment.user!}
+                  isSameUser={comment.userId! === user?.id}
                   openModal={() => openModal(comment)}
                   onDelete={() => handleDelete(comment.postId!, comment.uuid)}
                 />
